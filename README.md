@@ -1,36 +1,74 @@
 
-# Bitcoin Price Prediction
 
-A project to predict Bitcoin prices using historical data and machine learning models.
+# Bitcoin Price Prediction using Machine Learning
 
-## Overview
-This project analyzes historical Bitcoin price data to forecast future trends. It includes data preprocessing, visualizations, and a predictive model developed by me.
+This project explores how to use machine learning models to predict Bitcoin prices based on historical data. The notebook walks through data preprocessing, feature engineering, model training, and evaluation.
 
-## Setup
-1. Install dependencies:
+## 📁 Project Contents
+
+* `Bitcoin-Price-Prediction-using-Machine-Learning-in-Python.ipynb`: Jupyter notebook containing the full implementation from data analysis to model prediction.
+* `bitcoin.csv`: Dataset containing historical Bitcoin price and market data.
+
+## 📊 Dataset
+
+The dataset used includes Bitcoin prices from 2012 to 2020. It contains features like:
+
+* Open, High, Low, Close prices
+* Volume and Market Cap
+
+(Data source: [Kaggle Bitcoin Historical Data](https://www.kaggle.com/sudalairajkumar/cryptocurrencypricehistory) or similar)
+
+## 🛠️ Libraries Used
+
+* `pandas`
+* `numpy`
+* `matplotlib`
+* `seaborn`
+* `scikit-learn`
+* `xgboost`
+
+## 📌 ML Models Used
+
+* Linear Regression
+* Decision Tree Regressor
+* XGBoost Regressor
+
+Each model is evaluated using metrics such as:
+
+* R² Score
+* Mean Absolute Error (MAE)
+* Mean Squared Error (MSE)
+
+## 🚀 How to Run
+
+1. Clone the repository:
+
    ```bash
-   pip install pandas numpy matplotlib seaborn scikit-learn
+   git clone https://github.com/Ananyaa00051/Bitcoin-Price-Prediction.git
+   cd Bitcoin-Price-Prediction
    ```
-2. Run the script:
+
+2. Install the dependencies:
+
    ```bash
-   python predict.py
+   pip install -r requirements.txt
    ```
-   Or open `notebook.ipynb` in Jupyter Notebook.
 
-## Dataset
-- **Source**: Historical Bitcoin price data included as `bitcoin.csv`.
-- **Note**: Ensure the dataset is in the project folder. For a larger dataset, use [Kaggle Bitcoin Historical Data](https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data).
+3. Run the notebook:
 
-## Files
-- `predict.py`: Python script for data analysis and price prediction.
-- `notebook.ipynb`: Jupyter notebook with data exploration and visualizations.
-- `bitcoin.csv`: Historical Bitcoin price data.
+   ```bash
+   jupyter notebook Bitcoin-Price-Prediction-using-Machine-Learning-in-Python.ipynb
+   ```
 
-## Features
-- Data cleaning and preprocessing.
-- Visualizations of price trends.
-- Machine learning model for price prediction (e.g., Linear Regression or LSTM).
+## 📈 Result
 
-## Results
-- Predicted Bitcoin prices for the next 7 days.
-- Visualizations comparing predicted vs. actual prices.
+The project compares the performance of different regression models on predicting Bitcoin prices. XGBoost typically performs better due to its ability to handle non-linearity and overfitting.
+
+## ⚠️ Disclaimer
+
+This project is for educational purposes only. The source code and dataset were adapted from public resources. It is **not intended for financial advice or trading**.
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
